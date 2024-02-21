@@ -5,7 +5,7 @@ import { edit, trash } from "@/app/utils/icons";
 import React from "react";
 import styled from "styled-components";
 import { useGlobalState } from "@/app/context/GlobalProvider";
-import formatDate from "@/app/utils/formatDate";
+import { formatDate } from "@/app/utils/formatDate";
 import TaskItem from "../Tasks/TaskItem";
 
 interface Props {

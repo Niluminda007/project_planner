@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { TaskType } from "@/app/types/types";
 import { useGlobalState } from "@/app/context/GlobalProvider";
 import { add, close } from "@/app/utils/icons";
-import formatDate from "@/app/utils/formatDate";
+import { formatTime } from "@/app/utils/formatDate";
 
 interface TaskItemProps {
   task: TaskType;
@@ -50,13 +50,13 @@ const TaskItem: React.FC<TaskItemProps> = ({
           <span className="text-[1.2rem] text-[rgb(39,174,96)] mr-3">
             Start Time:
           </span>
-          {formatDate(task.startTime)}
+          {formatTime(task.startTime)}
         </p>
         <p>
           <span className="text-[1.2rem] text-[rgb(39,174,96)] mr-3">
             End Time:
           </span>
-          {formatDate(task.endTime)}
+          {formatTime(task.endTime)}
         </p>
       </TaskDetail>
     </TaskItemContainer>
