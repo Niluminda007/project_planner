@@ -5,7 +5,7 @@ import Projects from "../Components/Projects/Projects";
 
 const page = () => {
   const { incompleteProjects } = useGlobalState();
-  return <Projects title="Incomplete Projects" projects={incompleteProjects} />;
+  return <Projects title="Incomplete Events" projects={incompleteProjects} />;
 };
 
 export default page;

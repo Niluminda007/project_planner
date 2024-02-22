@@ -24,7 +24,7 @@ const Projects = ({ title, projects }: Props) => {
         ))}
         <button className="create-project" onClick={openModal}>
           {plus}
-          Add New Project
+          Add New Event
         </button>
       </div>
     </ProjectStyled>

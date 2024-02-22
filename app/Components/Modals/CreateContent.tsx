@@ -91,16 +91,16 @@ const CreateContent = () => {
 
   return (
     <CreateContentStyled onSubmit={handleSubmit} theme={theme}>
-      <h1>Create a Project</h1>
+      <h1>Create a Event</h1>
       <div className="input-control">
-        <label htmlFor="name">Project Name</label>
+        <label htmlFor="name">Event Name</label>
         <input
           id="name"
           type="text"
           name={"name"}
           value={project.name}
           onChange={(e) => handleChange("name", e.target.value)}
-          placeholder="Enter Project Name"
+          placeholder="Enter Event Name"
         />
       </div>
       <div className="input-control">
@@ -111,7 +111,7 @@ const CreateContent = () => {
           name={"description"}
           value={project.description}
           onChange={(e) => handleChange("description", e.target.value)}
-          placeholder="Enter Project Description"
+          placeholder="Enter Event Description"
         />
       </div>
 
@@ -142,25 +142,25 @@ const CreateContent = () => {
           ))}
       </div>
       <div className="input-control">
-        <label htmlFor="startDate">Project Start Date</label>
+        <label htmlFor="startDate">Event Start Date</label>
         <input
           id="startDate"
           type="date"
           name="startDate"
           value={project.startDate.toISOString().split("T")[0]}
           onChange={(e) => handleChange("startDate", e.target.value)}
-          placeholder="Enter Project Start Date"
+          placeholder="Enter Event Start Date"
         />
       </div>
       <div className="input-control">
-        <label htmlFor="endDate">Project End Date</label>
+        <label htmlFor="endDate">Event End Date</label>
         <input
           id="endDate"
           type="date"
           name="endDate"
           value={project.endDate.toISOString().split("T")[0]}
           onChange={(e) => handleChange("endDate", e.target.value)}
-          placeholder="Enter Project End Date"
+          placeholder="Enter Event End Date"
         />
       </div>
       <div className="input-control toggler">
@@ -186,7 +186,7 @@ const CreateContent = () => {
       <div className="submit-btn flex justify-end">
         <Button
           type="submit"
-          name="Create Project"
+          name="Create Event"
           icon={add}
           padding={"0.8rem 2rem"}
           borderRad={"0.8rem"}

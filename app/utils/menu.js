@@ -3,7 +3,7 @@ import { list, check, todo, home } from "./icons";
 const sideBarMenuItems = [
   {
     id: 1,
-    title: "All Projects",
+    title: "All Events",
     icon: home,
     link: "/",
   },
